@@ -1,9 +1,8 @@
 .services {
   width: 100%;
   height: 160vh;
-  background: url("../../img/services__bg.jpg") no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: center / cover no-repeat url('../../img/services__bg.jpg');
+ 
 }
 .services__inner {
   width: 100%;

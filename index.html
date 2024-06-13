@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Нетиповые решения 1С</title>
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <!-- 180x180 - ставим первым для safari -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <!-- 32x32 -->
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="yandex-tableau-widget" href="/tableau.json" />
+    <link rel="stylesheet" href="css/normalise.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body class="page__body">
+    <div class="footer__arrow">
+      <a class="footer__arrow-link" href="#hero">
+        <img src="img/Arrow__up.svg" alt="Кнопка наверх" />
+      </a>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="header__img-container">
+          <img
+            src="img/logo__dark.svg"
+            alt=""
+            class="logo__img-hidden"
+            width="80"
+          />
+        </div>
+
+        <div class="header__inner">
+          <div class="header__logo-hidden"></div>
+          <nav class="nav header__nav">
+            <ul class="header__navList list-reset">
+              <li class="header__navItem">
+                <a href="#about" class="header__navLink">Обо мне</a>
+              </li>
+              <li class="header__navItem">
+                <a href="#services" class="header__navLink">Услуги</a>
+              </li>
+              <li class="header__navItem">
+                <a href="#contacts" class="header__navLink">Контакты</a>
+              </li>
+            </ul>
+            <button class="btn-reset header__btn">Заказать звонок</button>
+          </nav>
+        </div>
+        <div class="container__mini">
+          <div class="header__line"></div>
+        </div>
+      </div>
+      <div class="burger__container">
+        <button class="btn-reset burger" id="burger">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </header>
+    <section class="hero" id="hero">
+      <div class="hero__inner">
+        <div class="hero__left">
+          <div class="hero__logo">
+            <img src="img/logo.svg" alt="" class="logo__img" width="95" />
+            <div class="hero__contacts">
+              <div class="logo__img-contacts">
+                <a
+                  href="https://t.me/Divomaster_spb"
+                  class="logo__img-link"
+                  target="_blank"
+                >
+                  <svg
+                    width="50"
+                    height="50"
+                    viewBox="0 0 50 50"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24.8833 6.80556e-05C18.2732 0.0309158 11.9442 2.67845 7.28103 7.36351C2.61783 12.0486 -7.19772e-05 18.3898 1.48424e-09 25C1.48425e-09 31.6304 2.63392 37.9893 7.32233 42.6777C12.0107 47.3661 18.3696 50 25 50C31.6304 50 37.9893 47.3661 42.6777 42.6777C47.3661 37.9893 50 31.6304 50 25C50 18.3696 47.3661 12.0108 42.6777 7.32239C37.9893 2.63399 31.6304 6.80556e-05 25 6.80556e-05C24.9611 -2.26852e-05 24.9222 -2.26852e-05 24.8833 6.80556e-05ZM35.2208 15.05C35.4292 15.0459 35.8896 15.098 36.1896 15.3417C36.3889 15.5148 36.5161 15.7565 36.5458 16.0188C36.5792 16.2125 36.6208 16.6563 36.5875 17.0021C36.2125 20.9563 34.5833 30.5479 33.7542 34.975C33.4042 36.85 32.7146 37.4771 32.0458 37.5375C30.5958 37.6729 29.4937 36.5792 28.0875 35.6584C25.8875 34.2146 24.6437 33.3167 22.5083 31.9084C20.0396 30.2834 21.6396 29.3875 23.0458 27.9292C23.4146 27.5459 29.8104 21.7271 29.9354 21.2C29.95 21.1334 29.9646 20.8875 29.8187 20.7584C29.6729 20.6292 29.4562 20.673 29.3 20.7084C29.0792 20.7584 25.5646 23.0834 18.7563 27.6771C17.7563 28.3646 16.8542 28.6979 16.0438 28.6771C15.1521 28.6604 13.4354 28.175 12.1583 27.7604C10.5917 27.25 9.34792 26.9813 9.45625 26.1167C9.5125 25.6667 10.1333 25.2063 11.3167 24.7355C18.6042 21.5605 23.4625 19.4667 25.8958 18.4563C32.8375 15.5688 34.2812 15.0667 35.2208 15.05Z"
+                      fill="#0A1523"
+                    />
+                  </svg>
+
+                  <!-- <img src="img/telega1.svg" alt="telegram icon" class="logo__img-link"/> -->
+                </a>
+              </div>
+              <div class="logo__img-contacts">
+                <a
+                  href="mailto:maryfrontend22@gmail.com"
+                  class="logo__img-link"
+                  target="_blank"
+                >
+                  <svg
+                    width="50"
+                    height="50"
+                    viewBox="0 0 50 50"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M15 0C6.71573 0 0 6.71573 0 15V35C0 43.2843 6.71573 50 15 50H35C43.2843 50 50 43.2843 50 35V15C50 6.71573 43.2843 0 35 0H15ZM33.3215 15.2602L35.3017 13.7131C35.7642 13.3317 36.3276 13.0929 36.9233 13.0257C37.519 12.9585 38.1214 13.0658 38.6572 13.3346C39.1931 13.6033 39.6393 14.0219 39.9417 14.5396C40.2441 15.0572 40.3897 15.6515 40.3606 16.2503V34.1807C40.3606 34.7388 40.1389 35.2739 39.7444 35.6685C39.3498 36.0631 38.8146 36.2847 38.2566 36.2847H33.3215V24.3414L24.89 30.6689L16.4585 24.3414V36.2847H11.5233C10.9653 36.2847 10.4302 36.0631 10.0356 35.6685C9.64102 35.2739 9.41934 34.7388 9.41934 34.1807V16.2503C9.37728 15.6463 9.51333 15.0432 9.81066 14.5158C10.108 13.9884 10.5535 13.5598 11.092 13.2831C11.6306 13.0065 12.2384 12.8939 12.8403 12.9593C13.4422 13.0247 14.0117 13.2653 14.4782 13.6512L16.4585 15.1983L24.89 21.5258L33.3215 15.2602Z"
+                      fill="#0A1523"
+                    />
+                  </svg>
+
+                  <!-- <img src="img/gmail.svg" alt="gmail icon" class="logo__img-link"/> -->
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="hero__decor-section"></div>
+        </div>
+        <div class="hero__right">
+          <div class="container__miniHero">
+            <div class="hero__content">
+              <h1 class="hero__title">
+                Решение задач любой сложности для&nbsp;1С <br />
+                под ключ
+              </h1>
+              <p class="hero__descr">Частный специалист</p>
+            </div>
+
+            <div class="hero__decor">
+              <svg
+                width="21"
+                height="243"
+                viewBox="0 0 21 243"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  class="hero__line"
+                  x1="10.5"
+                  y1="21"
+                  x2="10.5"
+                  y2="-3.88546e-07"
+                  stroke="#0E1D2C"
+                  stroke-width="20"
+                />
+                <line
+                  class="hero__line"
+                  x1="10.5"
+                  y1="95"
+                  x2="10.5"
+                  y2="74"
+                  stroke="#0E1D2C"
+                  stroke-width="20"
+                />
+                <line
+                  class="hero__line"
+                  x1="10.5"
+                  y1="169"
+                  x2="10.5"
+                  y2="148"
+                  stroke="#0E1D2C"
+                  stroke-width="20"
+                />
+                <line
+                  class="hero__line"
+                  x1="10.5"
+                  y1="243"
+                  x2="10.5"
+                  y2="222"
+                  stroke="#0E1D2C"
+                  stroke-width="20"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="work">
+      <div class="work__inner">
+        <div class="container">
+          <h2 class="work__title title">Я разрабатываю</h2>
+          <div class="work__cards">
+            <div class="work__card">
+              <img src="img/ico1.svg" alt="" class="work__card-icon" />
+              <p class="work__card-descr">Шаблоны печати</p>
+            </div>
+            <div class="work__card">
+              <img src="img/ico2.svg" alt="" class="work__card-icon" />
+              <p class="work__card-descr">Отчеты</p>
+            </div>
+            <div class="work__card">
+              <img src="img/ico3.svg" alt="" class="work__card-icon" />
+              <p class="work__card-descr">Обработки</p>
+            </div>
+            <div class="work__card">
+              <img src="img/ico4.svg" alt="" class="work__card-icon" />
+              <p class="work__card-descr">Документы</p>
+            </div>
+            <div class="work__card">
+              <img src="img/ico5.svg" alt="" class="work__card-icon" />
+              <p class="work__card-descr">Взаимодействие между БД</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="about__inner">
+        <div class="about__decor"></div>
+        <div class="about__content container__miniHero">
+          <div class="about__img">
+            <img src="img/about_content.jpg" alt="" class="about__pic" />
+          </div>
+          <div class="about__descr">
+            <h2 class="about__title title">Обо мне</h2>
+            <div class="about__text">
+              <p class="about__text-par">
+                Приветствую! Меня зовут Александр и я работаю программистом 1C с
+                2003 года.
+              </p>
+              <p class="about__text-par">
+                Имею опыт разработки, внедрения, проведения обучения.
+              </p>
+              <p class="about__text-par">
+                Особенностью своей работы считаю умение найти решения
+                нестандартных задач по 1C.
+              </p>
+              <p class="about__text-par">
+                Огромный опыт в области программирования и работы по
+                структуризации БД 1C позволяет мне решать вопросы по 1С любой
+                сложности.
+              </p>
+              <p class="about__text-par">
+                Свяжитесь со мной, чтобы получить грамотное решение своей
+                проблемы или консультацию.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="configurations">
+      <div class="configurations__inner">
+        <div class="container">
+          <h2 class="configurations__title title">
+            Работаю с конфигурациями 1С 7.7, 1С 8.0 - 8.3:
+          </h2>
+
+          <div class="configurations__descr">
+            <div class="configurations__descr-list">
+              <div class="configurations__descr-item">БП</div>
+              <div class="configurations__descr-item">УТ</div>
+              <div class="configurations__descr-item">КА</div>
+              <div class="configurations__descr-item">УПП</div>
+              <div class="configurations__descr-item">ЕРП</div>
+              <div class="configurations__descr-item">ЗУП</div>
+              <div class="configurations__descr-item">УНФ</div>
+              <div class="configurations__descr-item">ОТРАСЛЕВЫЕ РЕШЕНИЯ</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <secton class="advantages">
+      <div class="container">
+        <div class="advantages__inner">
+          <h2 class="advantages__title title">Преимущества работы со мной</h2>
+
+          <div class="advantages__cards grid">
+            <div class="advantages__card">
+              <div class="advantages__card-img card-1">
+                <img src="img/grid1.svg" alt="" />
+              </div>
+              <div class="advantages__card-content">
+                <div class="advantages__card-title">Экономия времени</div>
+                <div class="advantages__card-text">
+                  Я&nbsp;выполняю полный цикл работ от&nbsp;постановки
+                  до&nbsp;внедрения с&nbsp;последующим обучением заказчика при
+                  необходимости новому функционалу программы, и&nbsp;вам
+                  не&nbsp;придется обращаться к&nbsp;разным специалистам
+                  с&nbsp;последующим утрясанием графиков работ каждого.
+                </div>
+              </div>
+            </div>
+            <div class="advantages__card">
+              <div class="advantages__card-img card-2">
+                <img src="img/grid2.svg" alt="" />
+              </div>
+              <div class="advantages__card-content">
+                <div class="advantages__card-title">Всегда на связи</div>
+                <div class="advantages__card-text">
+                  Я&nbsp;консультирую своих заказчиков и&nbsp;после внедрения,
+                  поэтому Вам всегда будет к&nbsp;кому обратиться при
+                  возникающих вопросах.
+                </div>
+              </div>
+            </div>
+            <div class="advantages__card">
+              <div class="advantages__card-img card-3">
+                <img src="img/grid3.svg" alt="" width="80px" />
+              </div>
+              <div class="advantages__card-content">
+                <div class="advantages__card-title">Фиксированная цена</div>
+                <div class="advantages__card-text">
+                  Перед стартом работы над проектом я&nbsp;произвожу оценку
+                  ее&nbsp;длительности и&nbsp;стоимости.
+                </div>
+              </div>
+            </div>
+            <div class="advantages__card">
+              <div class="advantages__card-img card-4">
+                <img src="img/grid4.svg" alt="" />
+              </div>
+              <div class="advantages__card-content">
+                <div class="advantages__card-title">Гарантия качества</div>
+                <div class="advantages__card-text">
+                  Огромный опыт позволяет мне находить решения как стандартных,
+                  так и&nbsp;совершенно нетиповых задач. Обратившись
+                  ко&nbsp;мне, Вы&nbsp;можете быть уверены, что если
+                  я&nbsp;взялся за&nbsp;решение Вашего вопроса,
+                  он&nbsp;не&nbsp;&laquo;повиснет в&nbsp;воздухе&raquo;,
+                  а&nbsp;обязательно будет доведен до&nbsp;результата.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </secton>
+    <section class="services" id="services">
+      <div class="container">
+        <div class="services__inner">
+          <div class="services__content">
+            <div class="services__content-title title">Услуги</div>
+            <div class="services__content-list">
+              <div class="services__content-item">
+                Разработка внешних отчетов и&nbsp;обработок шаблонов печати для
+                любых конфигураций&nbsp;1C;
+              </div>
+              <div class="services__content-item">
+                Разработка и&nbsp;обслуживание любых конфигураций&nbsp;1C;
+              </div>
+              <div class="services__content-item">
+                Обновление типовых и&nbsp;нетиповых конфигураций;
+              </div>
+              <div class="services__content-item">
+                Организация взаимодействия между любыми базами&nbsp;1С (COM,
+                OLE, Планы обмена, КД2);
+              </div>
+              <div class="services__content-item">
+                Перенос данных любой сложности из&nbsp;старой конфигурации
+                1С&nbsp;в&nbsp;новую;
+              </div>
+              <div class="services__content-item">
+                Внесение НСИ и&nbsp;документов из&nbsp;внешних файлов;
+              </div>
+              <div class="services__content-item">
+                Оптимизация создания отчетов;
+              </div>
+              <div class="services__content-item">
+                Работа с&nbsp;веб сервисом;
+              </div>
+              <div class="services__content-item">
+                Создание самописной конфигурации на&nbsp;основе БСП;
+              </div>
+              <div class="services__content-item">
+                Модернизация типовых конфигураций с&nbsp;помощью расширений;
+              </div>
+              <div class="services__content-item">
+                Консультирование по&nbsp;вопросам&nbsp;1C.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts" id="contacts">
+      <div class="container contacts__container">
+        <div id="contact-map" class="contacts__map">          
+        </div>
+        <div class="contacts__form-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contacts__form">         
+            <input type="hidden" name="access_key" value="95104551-fbe4-4c41-81f0-ab8ac71c6821">
+          <h2 class="contacts__form-container__title title">Оставить заявку</h2>
+          <label class="contacts__form-field">
+            <span class="contacts__form-text">Кто Вы?*</span>
+            <select name="you" id="form__select" class="contacts__form-select input-focus" required aria-required="true">
+              <option value="">Выберите вариант ответа</option>
+              <option value="2">Организация</option>
+              <option value="3">Частное лицо</option>
+            </select>
+          </label>
+          
+          <label class="contacts__form-field">
+            <span class="contacts__form-text">Имя*</span>
+            <input
+              class="contacts__form-input input-focus"
+              type="text"
+              name="name"
+              placeholder="Введите Ваше имя"
+            />
+          </label>
+          <label class="contacts__form-field">
+            <span class="contacts__form-text">Емейл*</span>
+            <input
+              class="contacts__form-input input-focus"
+              type="email"
+              name="name"
+              placeholder="example@gmail.com" />
+          </label>
+          <label class="contacts__form-field">
+            <span class="contacts__form-message">Сообщение</span>
+            <textarea class="contacts__form-textmessage input-focus" name="message" id="textmessage" rows="5" cols="3" placeholder="Опишите Вашу проблему или вопрос" >
+            </textarea>            
+          </label>       
+
+            <div class="checkbox">
+              <input type="checkbox" name="agreement" id="formAgreement" class="checkbox__input req" checked required>
+              <label for="formAgreement" class="checkbox__label" aria-label="required" checked><span>Согласен на обработку персональных данных</span></label>
+            </div>
+            <button type="submit" class="btn-reset contacts__btn">Отправить</button>      
+        </form>
+        </div>
+      </div>      
+    </section>
+    <footer class="footer footer__container">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__logo">
+            <img src="img/Logo__footer.svg" alt="" width="150" />
+          </div>
+          <div class="footer__right">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="#about" class="footer__menu-link"> Обо мне </a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#services" class="footer__menu-link"> Услуги </a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#contacts" class="footer__menu-link"> Контакты </a>
+              </li>
+            </ul>
+            <div class="footer__socials" id="contacts">
+              <div class="footer__icon">
+                <a href="mailto:maryfrontend22@gmail.com">
+                  <img src="img/gmail.svg" alt="gmail icon" />
+                </a>
+              </div>
+              <div class="footer__icon">
+                <a href="https://t.me/Divomaster_spb" target="_blank">
+                  <img src="img/telega1.svg" alt="telegram icon" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p class="footer__text"><a href="#">Политика конфедициальности</a></p>
+          <p class="footer__text">&#169; 2023. Все права защищены</p>
+        </div>
+      </div>
+    </footer>
+    <div class="modal-parent">
+      <div class="modal-wrapper">
+        <div class="modal">
+          <h2 class="modal__title">Заказать обратный звонок</h2>
+          <form class="form" action="https://api.web3forms.com/submit" method="POST" >
+            <input type="hidden" name="access_key" value="95104551-fbe4-4c41-81f0-ab8ac71c6821">
+            <label class="form__field">
+              <span class="form__text">Имя</span>
+              <input
+                class="form__input focus"
+                type="text"
+                name="name"
+                placeholder="Введите Ваше имя"
+              />
+            </label>
+            <label class="form__field">
+              <span class="form__text">Телефон</span>
+              <input
+                class="form__input focus"
+                type="tel"
+                name="tel"
+                placeholder="Введите Ваш телефон"
+              />
+            </label>
+            <button class="btn btn-reset form__btn focus">Отправить</button>
+            <button class="close focus">
+              <svg
+                id="Capa_1"
+                enable-background="new 0 0 413.348 413.348"
+                height="50"
+                width="50"
+                viewBox="0 0 413.348 413.348"
+                width="512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m413.348 24.354-24.354-24.354-182.32 182.32-182.32-182.32-24.354 24.354 182.32 182.32-182.32 182.32 24.354 24.354 182.32-182.32 182.32 182.32 24.354-24.354-182.32-182.32z"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Модальное Окно  -->
+    <div id="overlay" style="border-radius: 5px; position: fixed;bottom: 0;
+    right: 0; max-width: 600px; height: auto; z-index: 8000; background-color: #fff;" class="popup__container">
+      <div class="popup">
+        <p>Используя данный сайт, вы даете согласие на использование файлов cookie, помогающих нам сделать его удобнее для вас.</p>
+        <a href="#">Подробнее</a>
+        <button id="hide_popup" class="btn-reset dont-show-me">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.470072 0.470072C0.610698 0.329622 0.801322 0.250732 1.00007 0.250732C1.19882 0.250732 1.38945 0.329622 1.53007 0.470072L13.5301 12.4701C13.6038 12.5387 13.6629 12.6215 13.7039 12.7135C13.7448 12.8055 13.7669 12.9048 13.7687 13.0056C13.7704 13.1063 13.7519 13.2063 13.7142 13.2997C13.6765 13.3931 13.6203 13.4779 13.5491 13.5491C13.4779 13.6203 13.3931 13.6765 13.2997 13.7142C13.2063 13.7519 13.1063 13.7704 13.0056 13.7687C12.9048 13.7669 12.8055 13.7448 12.7135 13.7039C12.6215 13.6629 12.5387 13.6038 12.4701 13.5301L0.470072 1.53007C0.329622 1.38945 0.250732 1.19882 0.250732 1.00007C0.250732 0.801322 0.329622 0.610698 0.470072 0.470072Z" fill="black"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5301 0.470072C13.6705 0.610698 13.7494 0.801322 13.7494 1.00007C13.7494 1.19882 13.6705 1.38945 13.5301 1.53007L1.53009 13.5301C1.38792 13.6626 1.19987 13.7347 1.00557 13.7312C0.811267 13.7278 0.625882 13.6491 0.488469 13.5117C0.351056 13.3743 0.272344 13.1889 0.268916 12.9946C0.265487 12.8003 0.33761 12.6122 0.47009 12.4701L12.4701 0.470072C12.6107 0.329622 12.8013 0.250732 13.0001 0.250732C13.1988 0.250732 13.3895 0.329622 13.5301 0.470072Z" fill="black"/>
+            </svg>
+        </button>
+      </div>
+    </div>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=60e8e380-ff59-4eb9-bd59-bc2eae09c6e9&lang=ru_RU"></script>
+    <script src="js/map.js"></script>
+    <script src="js/cookie.js"></script>
+    <script src="libs/inert.js"></script>   
+    <script src="js/modal.js"></script>
+    
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

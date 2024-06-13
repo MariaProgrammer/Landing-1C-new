@@ -1,0 +1,140 @@
+.hero__inner {
+  display: flex;
+  width: 100%;
+  margin: 0;
+}
+.hero__left {
+  width: 120px;
+  height: 100vh;
+  flex: 0 1 120px;
+  background-color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0 0 15px;
+}
+
+.hero__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo__img-contacts {
+  margin-bottom: 20px;
+  width: 50px;
+  transition: all ease 0.5s;
+}
+.logo__img-contacts:hover,
+.logo__img-contacts:active,
+.logo__img-contacts:focus {
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0px 0px 15px 10px var(--accent-color);
+  cursor: pointer;
+}
+
+.logo__img-contacts:last-child {
+  margin-bottom: 135px;
+}
+
+.logo__img-link:hover {
+  cursor: pointer;
+}
+
+.logo__img {
+  padding-right: 10px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+.logo__img-hidden {
+  position: fixed;
+  padding-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 80px;
+  display: none;
+  transition: display ease 0.5s;
+}
+
+.logo__img-hidden.visible {
+  display: block;
+}
+
+.hero__decor-section {
+  background-color: var(--color-lightblue);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero__right {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/bg__hero.png") center center no-repeat;
+  background-size: cover;
+}
+
+.hero__content {
+  padding-left: 15px;
+  padding-top: 180px;
+}
+
+.hero__title {
+  margin: 0;
+  padding: 0;
+  max-width: 680px;
+  font-family: var(--second-family);
+  font-weight: 680px;
+  font-size: 53px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+  margin-bottom: 35px;
+  opacity: 0;
+  transition: opacity ease 2s;
+}
+
+.hero__title.animation {
+  opacity: 1;
+  transition-delay: 1.5s;
+}
+
+.hero__descr {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 124%;
+  letter-spacing: 0.04em;
+  color: #31619f;
+  opacity: 0;
+  transition: opacity ease 2s;
+}
+
+.hero__descr.animation {
+  opacity: 1;
+  transition-delay: 2s;
+}
+
+.hero__decor {
+  padding-top: 200px;
+}
+
+.hero__line {
+  opacity: 0;
+  transition: opacity ease 3s;
+}
+
+.hero__line.animation {
+  opacity: 1;
+  transition-delay: 2.5s;
+}
